@@ -1,6 +1,6 @@
 # WiFi Security Auditor
 
-![WiFi Security Auditor](screenshots/dashboard.png)
+![WiFi Security Auditor](https://github.com/vision-dev1/wifi-security-auditor/blob/03c1955dc13773dc537cfb061c27594187d5c886/screenshot.png)
 
 ## Description
 
