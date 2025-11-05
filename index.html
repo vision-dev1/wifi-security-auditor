@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Security Auditor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="WiFi Security Auditor">WiFi Security Auditor</h1>
+            <p class="subtitle">Advanced Network Scanner & Security Analyzer</p>
+        </header>
+
+        <main>
+            <div class="scan-section">
+                <button id="scanBtn" class="scan-btn">
+                    <span class="btn-text">Scan Networks</span>
+                    <div class="spinner hidden"></div>
+                </button>
+                
+                <div id="progressBar" class="progress-bar hidden">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="exportJson" class="export-btn" disabled>Export JSON</button>
+                <button id="exportCsv" class="export-btn" disabled>Export CSV</button>
+            </div>
+
+            <div id="resultsContainer" class="results-container">
+                <table id="resultsTable" class="results-table hidden">
+                    <thead>
+                        <tr>
+                            <th>SSID</th>
+                            <th>BSSID</th>
+                            <th>Signal</th>
+                            <th>Channel</th>
+                            <th>Encryption</th>
+                            <th>Security Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <!-- Results will be populated here -->
+                    </tbody>
+                </table>
+                <div id="noResults" class="no-results">
+                    <p>No scan results yet. Click "Scan Networks" to begin.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="legal-notice">
+                <h3>⚠️ Legal Disclaimer</h3>
+                <p>This tool is developed for <strong>educational and authorized security auditing purposes only</strong>.</p>
+                <p>Unauthorized scanning or network intrusion is illegal and strictly prohibited.</p>
+                <p>The author assumes <strong>no responsibility</strong> for misuse of this tool.</p>
+            </div>
+            
+            <div class="attribution">
+                <p>Made By <a href="https://visionkc.com.np" target="_blank">Vision</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
