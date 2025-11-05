@@ -63,7 +63,7 @@ WiFi Security Auditor is a powerful network scanning tool designed to identify a
 ![Dashboard](https://github.com/vision-dev1/wifi-security-auditor/blob/505b87d3eb5f57cfebe8616adab6ab38c86d7ab3/screenshot.png)
 *Main Dashboard Interface*
 
-![Scan Results](screenshots/results.png)
+![Scan Results](https://github.com/vision-dev1/wifi-security-auditor/blob/0f4f2c02a9e9690f3e64d4bf2772d5105ebb981b/okay.png)
 *Network Scan Results with Security Scores*
 
 ## License
